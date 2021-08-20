@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { auth, db } from '../Config/Config'
 import { Link } from 'react-router-dom'
+import Grid from '@material-ui/core/Grid';
+
 
 export const Signup = (props) => {
 
@@ -31,6 +33,14 @@ export const Signup = (props) => {
     return (
         <div className='container'>
             <br />
+            <Grid justify="center"   container spacing={0}>
+     <br></br>
+        
+        <br></br>
+        <Grid  align="center"  item xs={12} sm={4}>
+         
+                   
+                   <img src="https://th.bing.com/th/id/OIP.bc2DELyRUvruC6pOGBs_7QHaJo?w=182&h=237&c=7&o=5&pid=1.7" />
             <h2>Sign up</h2>
             <br />
             <form autoComplete="off" className='form-group' onSubmit={signup}>
@@ -53,6 +63,8 @@ export const Signup = (props) => {
             <span>Already have an account? Login
                 <Link to="login"> Here</Link>
             </span>
+            </Grid>
+            </Grid>
         </div>
     )
 }
